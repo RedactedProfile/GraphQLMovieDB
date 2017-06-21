@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "\\": "src"
+        }
+    },
+    "require": {
+        "youshido/graphql": "v1.4.3.4"
+    }
+}

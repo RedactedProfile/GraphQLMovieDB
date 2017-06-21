@@ -1,0 +1,47 @@
+[
+    {
+        "name": "youshido/graphql",
+        "version": "v1.4.3.4",
+        "version_normalized": "1.4.3.4",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Youshido/GraphQL.git",
+            "reference": "9a80b8c0a98dc4bc8681cf4fc9b9753730e19ddc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Youshido/GraphQL/zipball/9a80b8c0a98dc4bc8681cf4fc9b9753730e19ddc",
+            "reference": "9a80b8c0a98dc4bc8681cf4fc9b9753730e19ddc",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5,<8.0-DEV"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8"
+        },
+        "time": "2017-06-07T02:14:45+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Youshido\\GraphQL\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alexandr Viniychuk",
+                "email": "a@viniychuk.com"
+            },
+            {
+                "name": "Portey Vasil",
+                "email": "portey@gmail.com"
+            }
+        ],
+        "description": "Pure PHP GraphQL"
+    }
+]
