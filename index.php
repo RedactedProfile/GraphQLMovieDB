@@ -10,6 +10,14 @@ $movieRepo = $entityManager->getRepository(Movie::class);
 $personRepo = $entityManager->getRepository(Person::class);
 
 
+foreach($movieRepo->findAll() as $movie) {
+    var_dump($movie->getName());
+}
+
+foreach($personRepo->findAll() as $person) {
+    var_dump($person->getName());
+}
+
 /*
 $matrix = (new Movie())->setName('The Matrix');
 $zootopia = (new Movie())->setName('Zootopia');
@@ -33,5 +41,7 @@ $entityManager->persist($jasonBateman);
 
 $entityManager->flush();
 */
+
+
 
 echo "Still here!";
