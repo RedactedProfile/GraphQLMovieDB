@@ -12,7 +12,6 @@ class PersonType extends AbstractObjectType
         $config->addFields([
             'id' => new StringType(),
             'name' => new StringType(),
-
         ]);
     }
 }

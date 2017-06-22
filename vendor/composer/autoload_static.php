@@ -11,10 +11,6 @@ class ComposerStaticInitf6046b98f7cf150dc26cc26a7d4a67d1
     );
 
     public static $prefixLengthsPsr4 = array (
-        '\\' => 
-        array (
-            '\\' => 1,
-        ),
         'Y' => 
         array (
             'Youshido\\GraphQL\\' => 17,
@@ -29,6 +25,10 @@ class ComposerStaticInitf6046b98f7cf150dc26cc26a7d4a67d1
         array (
             'Psr\\Log\\' => 8,
         ),
+        'M' => 
+        array (
+            'MovieDB\\' => 8,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -39,10 +39,6 @@ class ComposerStaticInitf6046b98f7cf150dc26cc26a7d4a67d1
     );
 
     public static $prefixDirsPsr4 = array (
-        '\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'Youshido\\GraphQL\\' => 
         array (
             0 => __DIR__ . '/..' . '/youshido/graphql/src',
@@ -62,6 +58,10 @@ class ComposerStaticInitf6046b98f7cf150dc26cc26a7d4a67d1
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'MovieDB\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/MovieDB',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

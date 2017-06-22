@@ -13,7 +13,7 @@ class Movie
     /**
      * @Column(type="string")
      * @Id
-     * @GeneratedValue(strategy="UUID")
+     * @GeneratedValue(strategy="AUTO")
      */
     protected $id;
 

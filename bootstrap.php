@@ -5,14 +5,14 @@ require_once 'vendor/autoload.php';
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 
-$paths = array("src");
+$paths = array("MovieDB");
 $isDevMode = true;
 
 // the connection configuration
 $dbParams = array(
-    'driver'   => 'pdo_mysql',
-    'user'     => 'root',
-    'password' => '',
+    'driver'   => 'pdo_pgsql',
+    'user'     => 'postgres',
+    'password' => 'toor',
     'dbname'   => 'moviedb',
 );
 
