@@ -5,6 +5,7 @@
         }
     },
     "require": {
-        "youshido/graphql": "v1.4.3.4"
+        "youshido/graphql": "v1.4.3.4",
+        "doctrine/orm": "^2.5"
     }
 }
