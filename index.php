@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == "OPTIONS") {
 }
 if ($_SERVER['REQUEST_URI'] == '/graphiql.css') {
     header('Content-Type: text/css');
-    readfile(__DIR__ . '/../GraphiQL/graphiql.css');
+    readfile(__DIR__ . '/static/GraphiQL/graphiql.css');
     die();
 }
 
@@ -31,7 +31,7 @@ if ((isset($_SERVER['CONTENT_TYPE']) && $_SERVER['CONTENT_TYPE'] === 'applicatio
 $payload   = isset($requestData['query']) ? $requestData['query'] : null;
 $variables = isset($requestData['variables']) ? $requestData['variables'] : null;
 if (empty($payload)) {
-    $GraphiQLData = file_get_contents(__DIR__ . '/../GraphiQL/index.html');
+    $GraphiQLData = file_get_contents(__DIR__ . '/static/GraphiQL/index.html');
     echo $GraphiQLData;
     die();
 }
