@@ -10,10 +10,11 @@ use MovieDB\Schema\MovieDBSchema;
 
 header('Access-Control-Allow-Headers: Content-Type');
 header('Access-Control-Allow-Credentials: true', true);
-header('Access-Control-Allow-Origin: http://127.0.0.1:8000');
+header('Access-Control-Allow-Origin: *');
 if ($_SERVER['REQUEST_METHOD'] == "OPTIONS") {
     return;
 }
+var_dump($_SERVER['REQUEST_URI']);
 if ($_SERVER['REQUEST_URI'] == '/graphiql.css') {
     header('Content-Type: text/css');
     readfile(__DIR__ . '/static/GraphiQL/graphiql.css');
