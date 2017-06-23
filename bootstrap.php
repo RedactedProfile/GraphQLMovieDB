@@ -7,6 +7,9 @@ use Doctrine\ORM\EntityManager;
 
 $paths = array("MovieDB");
 $isDevMode = true;
+die(var_dump($_ENV));
+$connectionParams = [];
+
 
 // the connection configuration
 $dbParams = array(
