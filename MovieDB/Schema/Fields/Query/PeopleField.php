@@ -44,7 +44,7 @@ class PeopleField extends AbstractField
             $offset = $args['offset'];
 
         $query->setFirstResult($offset)
-            ->setMaxResults($limit);
+              ->setMaxResults($limit);
 
         $paginator = new Paginator($query, true);
 
