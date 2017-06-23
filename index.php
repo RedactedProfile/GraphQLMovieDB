@@ -14,7 +14,6 @@ header('Access-Control-Allow-Origin: *');
 if ($_SERVER['REQUEST_METHOD'] == "OPTIONS") {
     return;
 }
-var_dump($_SERVER['REQUEST_URI']);
 if ($_SERVER['REQUEST_URI'] == '/graphiql.css') {
     header('Content-Type: text/css');
     readfile(__DIR__ . '/static/GraphiQL/graphiql.css');
