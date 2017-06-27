@@ -2,6 +2,7 @@
 
 namespace MovieDB\Schema;
 
+use MovieDB\Schema\Fields\Mutation\AssociatePersonToMovie;
 use MovieDB\Schema\Fields\Mutation\CreateMovieField;
 use MovieDB\Schema\Fields\Mutation\CreatePersonField;
 use MovieDB\Schema\Fields\Query\MovieField;
@@ -24,7 +25,8 @@ class MovieDBSchema extends AbstractSchema
 
         $config->getMutation()->addFields([
             new CreateMovieField(),
-            new CreatePersonField()
+            new CreatePersonField(),
+            new AssociatePersonToMovie()
         ]);
     }
 }
