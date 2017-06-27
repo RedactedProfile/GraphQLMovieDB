@@ -8,7 +8,7 @@ namespace MovieDB\Entity;
  * Class Person
  * @package MovieDB\Entity
  */
-class Person
+class Person implements \JsonSerializable
 {
     /**
      * @Column(type="string")
@@ -49,6 +49,14 @@ class Person
         $this->actorOf = new \Doctrine\Common\Collections\ArrayCollection();
         $this->writerOf = new \Doctrine\Common\Collections\ArrayCollection();
         $this->directorOf = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    public function jsonSerialize()
+    {
+        return [
+            'id' => $this->getId(),
+            'name' => $this->getName()
+        ];
     }
 
     /**
